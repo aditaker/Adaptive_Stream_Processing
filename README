@@ -1,0 +1,15 @@
+To tun the following project, you need Apache Spark and Apache Kafka setup on your machine.
+You also need to download spark-straming-kafka.jar to use kafka API in Spark.
+
+Each input stream contains line entries which are run through word-count algorithm.
+The outputs of the processed streams are then joined with join operation.
+
+You can use the kafka-server.py script to read lines from txt file and add to kafka topic.
+
+Experiment 1: Join Reordering Optimization
+
+spark-2.2.0-bin-hadoop2.7/bin/spark-submit --jars spark-streaming-kafka-0-8-assembly_2.11-2.4.1.jar exp1.py localhost:9092 <topic1> <topic2> <topic3> 
+
+Experiment 2: Optimal query from multiple query plans
+
+spark-2.2.0-bin-hadoop2.7/bin/spark-submit --jars spark-streaming-kafka-0-8-assembly_2.11-2.4.1.jar exp2.py localhost:9092 <topic1> <topic2> <topic3> <topic4>
