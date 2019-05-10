@@ -8,8 +8,8 @@ You can use the kafka-server.py script to read lines from txt file and add to ka
 
 Experiment 1: Join Reordering Optimization
 
-spark-2.2.0-bin-hadoop2.7/bin/spark-submit --jars spark-streaming-kafka-0-8-assembly_2.11-2.4.1.jar exp1.py localhost:9092 <topic1> <topic2> <topic3> 
+spark-2.2.0-bin-hadoop2.7/bin/spark-submit --jars spark-streaming-kafka-0-8-assembly_2.11-2.4.1.jar exp1.py <kafka-bootstrap-server> <topic1> <topic2> <topic3> 
 
 Experiment 2: Optimal query from multiple query plans
 
-spark-2.2.0-bin-hadoop2.7/bin/spark-submit --jars spark-streaming-kafka-0-8-assembly_2.11-2.4.1.jar exp2.py localhost:9092 <topic1> <topic2> <topic3> <topic4>
+spark-2.2.0-bin-hadoop2.7/bin/spark-submit --jars spark-streaming-kafka-0-8-assembly_2.11-2.4.1.jar exp2.py <kafka-bootstrap-server> <topic1> <topic2> <topic3> <topic4>
